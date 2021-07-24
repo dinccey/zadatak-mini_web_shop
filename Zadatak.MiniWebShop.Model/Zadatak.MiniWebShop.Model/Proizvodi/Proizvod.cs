@@ -14,7 +14,7 @@ namespace Zadatak.MiniWebShop.Model.Proizvodi
         public string Description { get; private set; }
         public decimal Price { get; private set; }
         public int QuantityAvailable { get; private set; }
-        public int QuantityDesired { get; private set; }
+      
         public Brand Brand { get; private set; }
     }
 }

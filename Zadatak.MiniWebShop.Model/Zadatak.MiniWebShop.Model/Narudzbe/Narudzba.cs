@@ -11,11 +11,14 @@ namespace Zadatak.MiniWebShop.Model.Narudzbe
     {
         private readonly List<Proizvod> _items = new List<Proizvod>();
 
-        public Narudzba()
+        public Narudzba(string cardNumber, string email, int phone, string deliveryAddress, string note)
         {
             Date = DateTime.Now;
-
-
+            CardNumber = cardNumber;
+            Email = email;
+            Phone = phone;
+            DeliveryAddress = deliveryAddress;
+            Note = note;
         }
         public int Id { get; private set; }
         public DateTime Date { get; private set; }
@@ -30,6 +33,15 @@ namespace Zadatak.MiniWebShop.Model.Narudzbe
         public string Note { get; private set; }
 
         public IReadOnlyCollection<Proizvod> Items => _items;
+
+        public void AddItem(Proizvod item)
+        {
+            if(item.QuantityAvailable == 0)
+            {
+                throw new NotAvailableException();
+            }
+            _items.Add(item);
+        }
 
     }
 }
