@@ -1,5 +1,0 @@
-C:\dev\king_akademija_2021\Zadatak\zadatak-mini_web_shop\Zadatak.MiniWebShop.Model\Zadatak.MiniWebShop.Model\obj\Debug\net5.0\Zadatak.MiniWebShop.Model.csproj.AssemblyReference.cache
-C:\dev\king_akademija_2021\Zadatak\zadatak-mini_web_shop\Zadatak.MiniWebShop.Model\Zadatak.MiniWebShop.Model\obj\Debug\net5.0\Zadatak.MiniWebShop.Model.GeneratedMSBuildEditorConfig.editorconfig
-C:\dev\king_akademija_2021\Zadatak\zadatak-mini_web_shop\Zadatak.MiniWebShop.Model\Zadatak.MiniWebShop.Model\obj\Debug\net5.0\Zadatak.MiniWebShop.Model.AssemblyInfoInputs.cache
-C:\dev\king_akademija_2021\Zadatak\zadatak-mini_web_shop\Zadatak.MiniWebShop.Model\Zadatak.MiniWebShop.Model\obj\Debug\net5.0\Zadatak.MiniWebShop.Model.AssemblyInfo.cs
-C:\dev\king_akademija_2021\Zadatak\zadatak-mini_web_shop\Zadatak.MiniWebShop.Model\Zadatak.MiniWebShop.Model\obj\Debug\net5.0\Zadatak.MiniWebShop.Model.csproj.CoreCompileInputs.cache
