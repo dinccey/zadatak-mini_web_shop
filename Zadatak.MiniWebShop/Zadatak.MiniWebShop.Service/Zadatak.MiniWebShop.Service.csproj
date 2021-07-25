@@ -5,8 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Narudzbe\" />
-    <Folder Include="Proizvodi\" />
+    <PackageReference Include="Abp" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Zadatak.MiniWebShop.API\Zadatak.MiniWebShop.API.csproj" />
+    <ProjectReference Include="..\Zadatak.MiniWebShop.Infrastructure\Zadatak.MiniWebShop.Infrastructure.csproj" />
+    <ProjectReference Include="..\Zadatak.MiniWebShop.Model\Zadatak.MiniWebShop.Model.csproj" />
   </ItemGroup>
 
 </Project>

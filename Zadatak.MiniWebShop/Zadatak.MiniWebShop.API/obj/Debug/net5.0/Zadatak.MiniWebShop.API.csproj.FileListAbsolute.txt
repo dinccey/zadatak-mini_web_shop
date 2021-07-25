@@ -11,7 +11,6 @@ C:\dev\king_akademija_2021\Zadatak\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zad
 C:\dev\king_akademija_2021\Zadatak\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\dev\king_akademija_2021\Zadatak\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\dev\king_akademija_2021\Zadatak\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\dev\king_akademija_2021\Zadatak\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.API\obj\Debug\net5.0\Zadatak.MiniWebShop.API.csproj.AssemblyReference.cache
 C:\dev\king_akademija_2021\Zadatak\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.API\obj\Debug\net5.0\Zadatak.MiniWebShop.API.GeneratedMSBuildEditorConfig.editorconfig
 C:\dev\king_akademija_2021\Zadatak\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.API\obj\Debug\net5.0\Zadatak.MiniWebShop.API.AssemblyInfoInputs.cache
 C:\dev\king_akademija_2021\Zadatak\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.API\obj\Debug\net5.0\Zadatak.MiniWebShop.API.AssemblyInfo.cs
@@ -27,3 +26,4 @@ C:\dev\king_akademija_2021\Zadatak\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zad
 C:\dev\king_akademija_2021\Zadatak\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.API\obj\Debug\net5.0\ref\Zadatak.MiniWebShop.API.dll
 C:\dev\king_akademija_2021\Zadatak\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.API\obj\Debug\net5.0\Zadatak.MiniWebShop.API.pdb
 C:\dev\king_akademija_2021\Zadatak\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.API\obj\Debug\net5.0\Zadatak.MiniWebShop.API.genruntimeconfig.cache
+C:\dev\king_akademija_2021\Zadatak\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.API\obj\Debug\net5.0\Zadatak.MiniWebShop.API.csproj.AssemblyReference.cache
