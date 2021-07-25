@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\dev\\king_akademija_2021\\Zadatak\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Model\\Zadatak.MiniWebShop.Model.csproj": {}
+    "C:\\Users\\Toshiba\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Model\\Zadatak.MiniWebShop.Model.csproj": {}
   },
   "projects": {
-    "C:\\dev\\king_akademija_2021\\Zadatak\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Model\\Zadatak.MiniWebShop.Model.csproj": {
+    "C:\\Users\\Toshiba\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Model\\Zadatak.MiniWebShop.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\king_akademija_2021\\Zadatak\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Model\\Zadatak.MiniWebShop.Model.csproj",
+        "projectUniqueName": "C:\\Users\\Toshiba\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Model\\Zadatak.MiniWebShop.Model.csproj",
         "projectName": "Zadatak.MiniWebShop.Model",
-        "projectPath": "C:\\dev\\king_akademija_2021\\Zadatak\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Model\\Zadatak.MiniWebShop.Model.csproj",
-        "packagesPath": "C:\\Users\\thePassword\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\king_akademija_2021\\Zadatak\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Model\\obj\\",
+        "projectPath": "C:\\Users\\Toshiba\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Model\\Zadatak.MiniWebShop.Model.csproj",
+        "packagesPath": "C:\\Users\\Toshiba\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Toshiba\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\thePassword\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Toshiba\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -1,83 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\dev\\king_akademija_2021\\Zadatak\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Service\\Zadatak.MiniWebShop.Service.csproj": {}
+    "C:\\Users\\Toshiba\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Service\\Zadatak.MiniWebShop.Service.csproj": {}
   },
   "projects": {
-    "C:\\dev\\king_akademija_2021\\Zadatak\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.API\\Zadatak.MiniWebShop.API.csproj": {
+    "C:\\Users\\Toshiba\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Infrastructure\\Zadatak.MiniWebShop.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\king_akademija_2021\\Zadatak\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.API\\Zadatak.MiniWebShop.API.csproj",
-        "projectName": "Zadatak.MiniWebShop.API",
-        "projectPath": "C:\\dev\\king_akademija_2021\\Zadatak\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.API\\Zadatak.MiniWebShop.API.csproj",
-        "packagesPath": "C:\\Users\\thePassword\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\king_akademija_2021\\Zadatak\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.API\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\thePassword\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net5.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
-          "dependencies": {
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[5.6.3, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\dev\\king_akademija_2021\\Zadatak\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Infrastructure\\Zadatak.MiniWebShop.Infrastructure.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\dev\\king_akademija_2021\\Zadatak\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Infrastructure\\Zadatak.MiniWebShop.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Toshiba\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Infrastructure\\Zadatak.MiniWebShop.Infrastructure.csproj",
         "projectName": "Zadatak.MiniWebShop.Infrastructure",
-        "projectPath": "C:\\dev\\king_akademija_2021\\Zadatak\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Infrastructure\\Zadatak.MiniWebShop.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\thePassword\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\king_akademija_2021\\Zadatak\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\Toshiba\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Infrastructure\\Zadatak.MiniWebShop.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Toshiba\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Toshiba\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\thePassword\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Toshiba\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -121,17 +58,17 @@
         }
       }
     },
-    "C:\\dev\\king_akademija_2021\\Zadatak\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Model\\Zadatak.MiniWebShop.Model.csproj": {
+    "C:\\Users\\Toshiba\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Model\\Zadatak.MiniWebShop.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\king_akademija_2021\\Zadatak\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Model\\Zadatak.MiniWebShop.Model.csproj",
+        "projectUniqueName": "C:\\Users\\Toshiba\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Model\\Zadatak.MiniWebShop.Model.csproj",
         "projectName": "Zadatak.MiniWebShop.Model",
-        "projectPath": "C:\\dev\\king_akademija_2021\\Zadatak\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Model\\Zadatak.MiniWebShop.Model.csproj",
-        "packagesPath": "C:\\Users\\thePassword\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\king_akademija_2021\\Zadatak\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Model\\obj\\",
+        "projectPath": "C:\\Users\\Toshiba\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Model\\Zadatak.MiniWebShop.Model.csproj",
+        "packagesPath": "C:\\Users\\Toshiba\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Toshiba\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\thePassword\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Toshiba\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -175,17 +112,17 @@
         }
       }
     },
-    "C:\\dev\\king_akademija_2021\\Zadatak\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Service\\Zadatak.MiniWebShop.Service.csproj": {
+    "C:\\Users\\Toshiba\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Service\\Zadatak.MiniWebShop.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\king_akademija_2021\\Zadatak\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Service\\Zadatak.MiniWebShop.Service.csproj",
+        "projectUniqueName": "C:\\Users\\Toshiba\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Service\\Zadatak.MiniWebShop.Service.csproj",
         "projectName": "Zadatak.MiniWebShop.Service",
-        "projectPath": "C:\\dev\\king_akademija_2021\\Zadatak\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Service\\Zadatak.MiniWebShop.Service.csproj",
-        "packagesPath": "C:\\Users\\thePassword\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\king_akademija_2021\\Zadatak\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Service\\obj\\",
+        "projectPath": "C:\\Users\\Toshiba\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Service\\Zadatak.MiniWebShop.Service.csproj",
+        "packagesPath": "C:\\Users\\Toshiba\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Toshiba\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\thePassword\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Toshiba\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -199,14 +136,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\dev\\king_akademija_2021\\Zadatak\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.API\\Zadatak.MiniWebShop.API.csproj": {
-                "projectPath": "C:\\dev\\king_akademija_2021\\Zadatak\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.API\\Zadatak.MiniWebShop.API.csproj"
+              "C:\\Users\\Toshiba\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Infrastructure\\Zadatak.MiniWebShop.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Toshiba\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Infrastructure\\Zadatak.MiniWebShop.Infrastructure.csproj"
               },
-              "C:\\dev\\king_akademija_2021\\Zadatak\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Infrastructure\\Zadatak.MiniWebShop.Infrastructure.csproj": {
-                "projectPath": "C:\\dev\\king_akademija_2021\\Zadatak\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Infrastructure\\Zadatak.MiniWebShop.Infrastructure.csproj"
-              },
-              "C:\\dev\\king_akademija_2021\\Zadatak\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Model\\Zadatak.MiniWebShop.Model.csproj": {
-                "projectPath": "C:\\dev\\king_akademija_2021\\Zadatak\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Model\\Zadatak.MiniWebShop.Model.csproj"
+              "C:\\Users\\Toshiba\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Model\\Zadatak.MiniWebShop.Model.csproj": {
+                "projectPath": "C:\\Users\\Toshiba\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Model\\Zadatak.MiniWebShop.Model.csproj"
               }
             }
           }

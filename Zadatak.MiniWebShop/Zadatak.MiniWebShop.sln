@@ -4,15 +4,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zadatak.MiniWebShop.Model", "Zadatak.MiniWebShop.Model\Zadatak.MiniWebShop.Model.csproj", "{75DFA658-C978-48A2-98B1-784290D9DC5E}"
-	ProjectSection(ProjectDependencies) = postProject
-		{C83988CF-A72E-4C0D-A0D0-EE1F8DE66B0B} = {C83988CF-A72E-4C0D-A0D0-EE1F8DE66B0B}
-	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zadatak.MiniWebShop.API", "Zadatak.MiniWebShop.API\Zadatak.MiniWebShop.API.csproj", "{C83988CF-A72E-4C0D-A0D0-EE1F8DE66B0B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zadatak.MiniWebShop.Service", "Zadatak.MiniWebShop.Service\Zadatak.MiniWebShop.Service.csproj", "{B08D3541-5621-45DD-9580-ECD79D3FA14D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadatak.MiniWebShop.Infrastructure", "Zadatak.MiniWebShop.Infrastructure\Zadatak.MiniWebShop.Infrastructure.csproj", "{D33C8FC0-3157-4F41-9330-FD0DF960FCDB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zadatak.MiniWebShop.Infrastructure", "Zadatak.MiniWebShop.Infrastructure\Zadatak.MiniWebShop.Infrastructure.csproj", "{D33C8FC0-3157-4F41-9330-FD0DF960FCDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadatak.MiniWebShop.Repository", "Zadatak.MiniWebShop.Repository\Zadatak.MiniWebShop.Repository.csproj", "{68D1BE08-4646-4A60-B45B-B4181A5E9148}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +35,10 @@ Global
 		{D33C8FC0-3157-4F41-9330-FD0DF960FCDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D33C8FC0-3157-4F41-9330-FD0DF960FCDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D33C8FC0-3157-4F41-9330-FD0DF960FCDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68D1BE08-4646-4A60-B45B-B4181A5E9148}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68D1BE08-4646-4A60-B45B-B4181A5E9148}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68D1BE08-4646-4A60-B45B-B4181A5E9148}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68D1BE08-4646-4A60-B45B-B4181A5E9148}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

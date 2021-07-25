@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Zadatak.MiniWebShop.Model.Narudzbe;
 using Zadatak.MiniWebShop.Model.Proizvodi;
 
-namespace Zadatak.MiniWebShop.Service.Narudzbe
+namespace Zadatak.MiniWebShop.Model.Narudzbe
 {
     public class NarudzbaDomainService
     {

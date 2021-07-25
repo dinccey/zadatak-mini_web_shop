@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Zadatak.MiniWebShop.Infrastructure.Domain;
 using Zadatak.MiniWebShop.Model.Proizvodi;
-using Zadatak.MiniWebShop.Service.Narudzbe;
+using Zadatak.MiniWebShop.Service.Proizvodi;
 
 namespace Zadatak.MiniWebShop.Service.Proizvodi
 {
@@ -15,23 +15,26 @@ namespace Zadatak.MiniWebShop.Service.Proizvodi
         private readonly IUnitOfWork _unitOfWork;
         private readonly IProizvodRepository _proizvodRepository;
         private readonly KosaricaDomainService _kosaricaDomainService;
+        private Kosarica kosarica;
+        
         public KosaricaService()
         {
 
         }
-        public Task AddItemAsync(AddItemDto dto)
+        public async Task AddItemAsync(AddItemDto dto, Kosarica kosaricaDto)
         {
-            throw new NotImplementedException();
+            kosarica = await _kosaricaDomainService.AddItemAsync(dto, kosaricaDto);
+            
         }
 
-        public Task GetAllItemsAsync()
+        public async Task CreateKosarica()
         {
-            throw new NotImplementedException();
+            kosarica = await _kosaricaDomainService.CreateKosaricaAsync();
         }
 
-        public Task RemoveItemAsync(AddItemDto dto)
+        public async Task RemoveItemAsync(AddItemDto dto, Kosarica kosaricaDto)
         {
-            throw new NotImplementedException();
+            kosarica = await _kosaricaDomainService.RemoveItemAsync(dto, kosaricaDto);
         }
     }
 }

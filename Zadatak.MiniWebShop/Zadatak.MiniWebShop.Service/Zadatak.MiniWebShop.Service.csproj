@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -9,7 +9,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Zadatak.MiniWebShop.API\Zadatak.MiniWebShop.API.csproj" />
     <ProjectReference Include="..\Zadatak.MiniWebShop.Infrastructure\Zadatak.MiniWebShop.Infrastructure.csproj" />
     <ProjectReference Include="..\Zadatak.MiniWebShop.Model\Zadatak.MiniWebShop.Model.csproj" />
   </ItemGroup>
