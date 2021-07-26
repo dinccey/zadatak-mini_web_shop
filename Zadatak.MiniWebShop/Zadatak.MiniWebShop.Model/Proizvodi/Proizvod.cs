@@ -8,13 +8,13 @@ namespace Zadatak.MiniWebShop.Model.Proizvodi
 {
     public class Proizvod
     {
-      
+       
         public int Id { get; private set; }
-        public string Name { get; private set; }
-        public string Description { get; private set; }
-        public decimal Price { get; private set; }
-        public int QuantityAvailable { get; private set; }
+        public string Naziv { get; private set; }
+        public string Opis { get; private set; }
+        public decimal Cijena { get; private set; }
+        public int Kolicina { get; private set; }
       
-        public Brand Brand { get; private set; }
+        public int Brand_Id { get; private set; }
     }
 }

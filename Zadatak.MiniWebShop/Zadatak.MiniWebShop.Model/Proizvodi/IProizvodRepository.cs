@@ -10,5 +10,7 @@ namespace Zadatak.MiniWebShop.Model.Proizvodi
     {
         Task<IEnumerable<Proizvod>> GetAllProizvodAsync();
         Task<Proizvod> GetProizvodByIdAsync(int id);
+
+        Task<IEnumerable<Brand>> GetAllBrandsAsync();
     }
 }

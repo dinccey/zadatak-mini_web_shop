@@ -17,7 +17,7 @@ namespace Zadatak.MiniWebShop.Model.Proizvodi
         public IReadOnlyCollection<Proizvod> Items => _items;
         public void AddItem(Proizvod item)
         {
-            if (item.QuantityAvailable == 0)
+            if (item.Kolicina == 0)
             {
                 throw new NotAvailableException();
             }

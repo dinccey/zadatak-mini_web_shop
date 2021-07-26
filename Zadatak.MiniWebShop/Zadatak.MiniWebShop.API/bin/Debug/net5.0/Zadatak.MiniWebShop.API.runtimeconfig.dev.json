@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\Toshiba\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Toshiba\\.nuget\\packages"
+      "C:\\Users\\thePassword\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\thePassword\\.nuget\\packages"
     ]
   }
 }

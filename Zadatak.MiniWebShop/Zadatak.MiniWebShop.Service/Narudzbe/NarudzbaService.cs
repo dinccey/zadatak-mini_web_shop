@@ -18,6 +18,9 @@ namespace Zadatak.MiniWebShop.Service.Narudzbe
         private readonly IProizvodRepository _proizvodRepository;
         private readonly NarudzbaDomainService _narudzbaDomainService;
 
+        private Kosarica _kosarica;
+
+
         public NarudzbaService(IUnitOfWork unitOfWork, INarudzbaRepository narudzbaRepository, NarudzbaDomainService narudzbaDomainService, IProizvodRepository proizvodRepository)
         {
             _unitOfWork = unitOfWork;
@@ -27,8 +30,9 @@ namespace Zadatak.MiniWebShop.Service.Narudzbe
         }
         public async Task CreateNarudzbaAsync(CreateNarudzbaDto dto)
         {
-            var narudzba = await _narudzbaDomainService.CreateNarudzbaAsync(dto.CardNumber, dto.Email, dto.Phone, dto.DeliveryAddress, dto.Note);
-            await _narudzbaRepository.CreateNarudzbaAsync(narudzba);
+            var discount = await _narudzbaDomainService.GetDiscountIdAsync(dto.DiscountCodeId);
+            var narudzba = await _narudzbaDomainService.CreateNarudzbaAsync(dto.CardNumber, dto.Email, dto.Phone, dto.DeliveryAddress, dto.Note, discount.Id);
+            await _narudzbaRepository.CreateNarudzbaAsync(narudzba, _kosarica);
             await _unitOfWork.CommitAsync();
         }
         public async Task AddItemAsync(AddItemDto dto)
@@ -36,6 +40,16 @@ namespace Zadatak.MiniWebShop.Service.Narudzbe
             var proizvod = await _narudzbaDomainService.AddItemAsync(dto.Id);
             await _narudzbaRepository.AddItemAsync(proizvod);
             await _unitOfWork.CommitAsync();
+        }
+        public async Task<IEnumerable<NacinPlacanja>> GetAllNacinPlacanjaAsync()
+        {
+            IEnumerable<NacinPlacanja> nacinPlacanjas = await _narudzbaDomainService.GetNacinPlacanjasAsync();
+            return nacinPlacanjas;
+        }
+
+        public async Task SetKosarica(Kosarica kosarica)
+        {
+            _kosarica = kosarica;
         }
     }
 }

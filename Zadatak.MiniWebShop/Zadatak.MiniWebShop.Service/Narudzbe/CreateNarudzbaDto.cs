@@ -17,5 +17,7 @@ namespace Zadatak.MiniWebShop.Service.Narudzbe
         public int Phone { get;  set; }
         public string DeliveryAddress { get; set; }
         public string Note { get; set; }
+
+        public string DiscountCode { get; set; }
     }
 }

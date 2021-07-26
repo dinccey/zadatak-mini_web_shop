@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Toshiba\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Model\\Zadatak.MiniWebShop.Model.csproj": {}
+    "C:\\Users\\thePassword\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Model\\Zadatak.MiniWebShop.Model.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Toshiba\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Model\\Zadatak.MiniWebShop.Model.csproj": {
+    "C:\\Users\\thePassword\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Model\\Zadatak.MiniWebShop.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Toshiba\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Model\\Zadatak.MiniWebShop.Model.csproj",
+        "projectUniqueName": "C:\\Users\\thePassword\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Model\\Zadatak.MiniWebShop.Model.csproj",
         "projectName": "Zadatak.MiniWebShop.Model",
-        "projectPath": "C:\\Users\\Toshiba\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Model\\Zadatak.MiniWebShop.Model.csproj",
-        "packagesPath": "C:\\Users\\Toshiba\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Toshiba\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Model\\obj\\",
+        "projectPath": "C:\\Users\\thePassword\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Model\\Zadatak.MiniWebShop.Model.csproj",
+        "packagesPath": "C:\\Users\\thePassword\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\thePassword\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Toshiba\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\thePassword\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

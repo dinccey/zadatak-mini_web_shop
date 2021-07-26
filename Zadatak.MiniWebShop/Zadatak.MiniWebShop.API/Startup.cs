@@ -11,6 +11,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Zadatak.MiniWebShop.Repository;
+using Microsoft.EntityFrameworkCore;
+using Zadatak.MiniWebShop.Infrastructure.Domain;
+using Zadatak.MiniWebShop.Repository.Proizvodi;
+using Zadatak.MiniWebShop.Model.Proizvodi;
+using Zadatak.MiniWebShop.Service.Proizvodi;
 
 namespace Zadatak.MiniWebShop.API
 {
@@ -26,8 +32,15 @@ namespace Zadatak.MiniWebShop.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            
             services.AddControllers();
+
+            services.AddDbContext<ShopDbContext>((options) => options.UseSqlServer(Configuration.GetConnectionString("MiniWebShop")));
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddTransient<IProizvodRepository, ProizvodRepository>();
+            services.AddTransient<IProizvodService, ProizvodService>();
+            services.AddTransient<ProizvodDomainService, ProizvodDomainService>();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Zadatak.MiniWebShop.API", Version = "v1" });

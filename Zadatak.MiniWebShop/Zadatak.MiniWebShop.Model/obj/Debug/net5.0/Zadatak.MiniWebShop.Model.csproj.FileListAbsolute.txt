@@ -26,3 +26,15 @@ C:\Users\Toshiba\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.
 C:\Users\Toshiba\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.Model\obj\Debug\net5.0\Zadatak.MiniWebShop.Model.dll
 C:\Users\Toshiba\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.Model\obj\Debug\net5.0\ref\Zadatak.MiniWebShop.Model.dll
 C:\Users\Toshiba\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.Model\obj\Debug\net5.0\Zadatak.MiniWebShop.Model.pdb
+C:\Users\thePassword\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.Model\bin\Debug\net5.0\Zadatak.MiniWebShop.Model.deps.json
+C:\Users\thePassword\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.Model\bin\Debug\net5.0\Zadatak.MiniWebShop.Model.dll
+C:\Users\thePassword\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.Model\bin\Debug\net5.0\ref\Zadatak.MiniWebShop.Model.dll
+C:\Users\thePassword\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.Model\bin\Debug\net5.0\Zadatak.MiniWebShop.Model.pdb
+C:\Users\thePassword\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.Model\obj\Debug\net5.0\Zadatak.MiniWebShop.Model.csproj.AssemblyReference.cache
+C:\Users\thePassword\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.Model\obj\Debug\net5.0\Zadatak.MiniWebShop.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thePassword\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.Model\obj\Debug\net5.0\Zadatak.MiniWebShop.Model.AssemblyInfoInputs.cache
+C:\Users\thePassword\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.Model\obj\Debug\net5.0\Zadatak.MiniWebShop.Model.AssemblyInfo.cs
+C:\Users\thePassword\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.Model\obj\Debug\net5.0\Zadatak.MiniWebShop.Model.csproj.CoreCompileInputs.cache
+C:\Users\thePassword\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.Model\obj\Debug\net5.0\Zadatak.MiniWebShop.Model.dll
+C:\Users\thePassword\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.Model\obj\Debug\net5.0\ref\Zadatak.MiniWebShop.Model.dll
+C:\Users\thePassword\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.Model\obj\Debug\net5.0\Zadatak.MiniWebShop.Model.pdb

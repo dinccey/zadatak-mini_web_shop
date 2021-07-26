@@ -11,32 +11,37 @@ namespace Zadatak.MiniWebShop.Model.Narudzbe
     {
         private readonly List<Proizvod> _items = new List<Proizvod>();
 
-        public Narudzba(string cardNumber, string email, int phone, string deliveryAddress, string note)
+        public Narudzba()
         {
-            Date = DateTime.Now;
-            CardNumber = cardNumber;
+
+        }
+        public Narudzba(string cardNumber, string email, int phone, string deliveryAddress, string note, int discount_id)
+        {
+            Datum = DateTime.Now;
+            Broj_Kartice = cardNumber;
             Email = email;
-            Phone = phone;
-            DeliveryAddress = deliveryAddress;
-            Note = note;
+            Broj_Mobitela = phone;
+            Adresa_Dostave = deliveryAddress;
+            Napomena = note;
+            Kod_Za_Popust_Id = discount_id;
         }
         public int Id { get; private set; }
-        public DateTime Date { get; private set; }
-        public decimal PriceTotalTaxed { get; private set; }
-        public decimal PriceTotal { get; private set; }
-        public KodPopust DiscountCode { get; private set; }
-        public NacinPlacanja PaymentMethod { get; private set; }
-        public string CardNumber { get; private set; }
+        public DateTime Datum { get; private set; }
+        public decimal Ukupna_Cijena_Bez_P { get; private set; }
+        public decimal Ukupna_Cijena_S_P { get; private set; }
+        public int Kod_Za_Popust_Id { get; private set; }
+        public int Nacin_Placanja_Id { get; private set; }
+        public string Broj_Kartice { get; private set; }
         public string Email { get; private set; }
-        public int Phone { get; private set; }
-        public string DeliveryAddress { get; private set; }
-        public string Note { get; private set; }
+        public int Broj_Mobitela { get; private set; }
+        public string Adresa_Dostave { get; private set; }
+        public string Napomena { get; private set; }
 
         public IReadOnlyCollection<Proizvod> Items => _items;
 
         public void AddItem(Proizvod item)
         {
-            if(item.QuantityAvailable == 0)
+            if(item.Kolicina == 0)
             {
                 throw new NotAvailableException();
             }

@@ -1,0 +1,17 @@
+C:\Users\thePassword\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.Repository\bin\Debug\net5.0\Zadatak.MiniWebShop.Repository.deps.json
+C:\Users\thePassword\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.Repository\bin\Debug\net5.0\Zadatak.MiniWebShop.Repository.dll
+C:\Users\thePassword\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.Repository\bin\Debug\net5.0\ref\Zadatak.MiniWebShop.Repository.dll
+C:\Users\thePassword\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.Repository\bin\Debug\net5.0\Zadatak.MiniWebShop.Repository.pdb
+C:\Users\thePassword\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.Repository\bin\Debug\net5.0\Zadatak.MiniWebShop.Infrastructure.dll
+C:\Users\thePassword\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.Repository\bin\Debug\net5.0\Zadatak.MiniWebShop.Model.dll
+C:\Users\thePassword\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.Repository\bin\Debug\net5.0\Zadatak.MiniWebShop.Infrastructure.pdb
+C:\Users\thePassword\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.Repository\bin\Debug\net5.0\Zadatak.MiniWebShop.Model.pdb
+C:\Users\thePassword\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.Repository\obj\Debug\net5.0\Zadatak.MiniWebShop.Repository.csproj.AssemblyReference.cache
+C:\Users\thePassword\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.Repository\obj\Debug\net5.0\Zadatak.MiniWebShop.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thePassword\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.Repository\obj\Debug\net5.0\Zadatak.MiniWebShop.Repository.AssemblyInfoInputs.cache
+C:\Users\thePassword\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.Repository\obj\Debug\net5.0\Zadatak.MiniWebShop.Repository.AssemblyInfo.cs
+C:\Users\thePassword\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.Repository\obj\Debug\net5.0\Zadatak.MiniWebShop.Repository.csproj.CoreCompileInputs.cache
+C:\Users\thePassword\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.Repository\obj\Debug\net5.0\Zadatak.MiniWebShop.Repository.csproj.CopyComplete
+C:\Users\thePassword\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.Repository\obj\Debug\net5.0\Zadatak.MiniWebShop.Repository.dll
+C:\Users\thePassword\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.Repository\obj\Debug\net5.0\ref\Zadatak.MiniWebShop.Repository.dll
+C:\Users\thePassword\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.Repository\obj\Debug\net5.0\Zadatak.MiniWebShop.Repository.pdb

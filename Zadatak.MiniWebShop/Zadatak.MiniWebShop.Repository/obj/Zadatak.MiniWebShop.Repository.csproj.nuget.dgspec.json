@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Toshiba\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Repository\\Zadatak.MiniWebShop.Repository.csproj": {}
+    "C:\\Users\\thePassword\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Repository\\Zadatak.MiniWebShop.Repository.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Toshiba\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Repository\\Zadatak.MiniWebShop.Repository.csproj": {
+    "C:\\Users\\thePassword\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Infrastructure\\Zadatak.MiniWebShop.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Toshiba\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Repository\\Zadatak.MiniWebShop.Repository.csproj",
-        "projectName": "Zadatak.MiniWebShop.Repository",
-        "projectPath": "C:\\Users\\Toshiba\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Repository\\Zadatak.MiniWebShop.Repository.csproj",
-        "packagesPath": "C:\\Users\\Toshiba\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Toshiba\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Repository\\obj\\",
+        "projectUniqueName": "C:\\Users\\thePassword\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Infrastructure\\Zadatak.MiniWebShop.Infrastructure.csproj",
+        "projectName": "Zadatak.MiniWebShop.Infrastructure",
+        "projectPath": "C:\\Users\\thePassword\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Infrastructure\\Zadatak.MiniWebShop.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\thePassword\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\thePassword\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Toshiba\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\thePassword\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +39,131 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\thePassword\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Model\\Zadatak.MiniWebShop.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\thePassword\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Model\\Zadatak.MiniWebShop.Model.csproj",
+        "projectName": "Zadatak.MiniWebShop.Model",
+        "projectPath": "C:\\Users\\thePassword\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Model\\Zadatak.MiniWebShop.Model.csproj",
+        "packagesPath": "C:\\Users\\thePassword\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\thePassword\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\thePassword\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\thePassword\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Repository\\Zadatak.MiniWebShop.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\thePassword\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Repository\\Zadatak.MiniWebShop.Repository.csproj",
+        "projectName": "Zadatak.MiniWebShop.Repository",
+        "projectPath": "C:\\Users\\thePassword\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Repository\\Zadatak.MiniWebShop.Repository.csproj",
+        "packagesPath": "C:\\Users\\thePassword\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\thePassword\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\thePassword\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\thePassword\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Infrastructure\\Zadatak.MiniWebShop.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\thePassword\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Infrastructure\\Zadatak.MiniWebShop.Infrastructure.csproj"
+              },
+              "C:\\Users\\thePassword\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Model\\Zadatak.MiniWebShop.Model.csproj": {
+                "projectPath": "C:\\Users\\thePassword\\Source\\Repos\\zadatak-mini_web_shop\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Model\\Zadatak.MiniWebShop.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[5.0.8, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
