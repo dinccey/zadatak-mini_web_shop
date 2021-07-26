@@ -17,11 +17,22 @@ namespace Zadatak.MiniWebShop.Model.Proizvodi
         public IReadOnlyCollection<Proizvod> Items => _items;
         public void AddItem(Proizvod item)
         {
-            if (item.Kolicina == 0)
+            if (item!=null)
             {
-                throw new NotAvailableException();
+                try
+                {
+                    if (item.Kolicina == 0)
+                    {
+                        throw new NotAvailableException();
+                    }
+                    _items.Add(item);
+                }
+                catch (Exception)
+                {
+
+                    Console.WriteLine("Not available.");
+                }
             }
-            _items.Add(item);
         }
         public void RemoveItem(Proizvod item)
         {

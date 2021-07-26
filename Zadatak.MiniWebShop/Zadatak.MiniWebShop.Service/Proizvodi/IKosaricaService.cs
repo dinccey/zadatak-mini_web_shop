@@ -10,8 +10,8 @@ namespace Zadatak.MiniWebShop.Service.Proizvodi
 {
     public interface IKosaricaService
     {
-        Task AddItemAsync(AddItemDto dto, Kosarica kosaricaDto);
-        Task RemoveItemAsync(AddItemDto dto, Kosarica kosaricaDto);
-        Task CreateKosarica();
+        Task<Kosarica> AddItemAsync(AddItemDto dto, Kosarica kosaricaDto);
+        Task<Kosarica> RemoveItemAsync(AddItemDto dto, Kosarica kosaricaDto);
+        
     }
 }

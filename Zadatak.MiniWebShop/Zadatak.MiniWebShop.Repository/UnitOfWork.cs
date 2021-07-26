@@ -10,8 +10,8 @@ namespace Zadatak.MiniWebShop.Repository
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private readonly ShopDbContext _dbContext;
-        public UnitOfWork(ShopDbContext context)
+        private readonly MiniWebShopContext _dbContext;
+        public UnitOfWork(MiniWebShopContext context)
         {
             _dbContext = context;
         }

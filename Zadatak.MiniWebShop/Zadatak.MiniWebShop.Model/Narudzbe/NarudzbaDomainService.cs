@@ -18,9 +18,9 @@ namespace Zadatak.MiniWebShop.Model.Narudzbe
             _proizvodRepository = proizvodRepository;
         }
 
-        public async Task<Narudzba> CreateNarudzbaAsync(string cardNumber, string email, int phone, string deliveryAddress, string note, int discountId)
+        public async Task<Narudzba> CreateNarudzbaAsync(string cardNumber, string email, int phone, string deliveryAddress, string note, PopustKodovi discount)
         {
-            var narudzba = new Narudzba(cardNumber, email, phone, deliveryAddress, note, discountId);
+            var narudzba = new Narudzba(cardNumber, email, phone, deliveryAddress, note, discount);
             return narudzba;
         }
         public async Task<Proizvod> AddItemAsync(int id)
@@ -29,7 +29,7 @@ namespace Zadatak.MiniWebShop.Model.Narudzbe
             return item.Result;
         }
 
-        public async Task<KodPopust> GetDiscountIdAsync(int discountCodeId)
+        public async Task<PopustKodovi> GetDiscountIdAsync(int discountCodeId)
         {
             var kodPopust = _narudzbaRepository.GetPopustIdAsync(discountCodeId);
             return kodPopust.Result;

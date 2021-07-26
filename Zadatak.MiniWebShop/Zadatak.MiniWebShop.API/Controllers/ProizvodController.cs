@@ -26,5 +26,11 @@ namespace Zadatak.MiniWebShop.API.Controllers
             return await _proizvodService.GetAllProizvodAsync();
         }
 
+        [HttpGet, Route("{id}")]
+        public async Task<Proizvod> GetById(int id)
+        {
+            return await _proizvodService.GetProizvodById(id);
+        }
+
     }
 }

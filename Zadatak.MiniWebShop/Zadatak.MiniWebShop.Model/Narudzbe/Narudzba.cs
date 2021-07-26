@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,39 +10,48 @@ namespace Zadatak.MiniWebShop.Model.Narudzbe
 {
     public class Narudzba
     {
+        [NotMapped]
         private readonly List<Proizvod> _items = new List<Proizvod>();
 
-        public Narudzba()
-        {
 
-        }
-        public Narudzba(string cardNumber, string email, int phone, string deliveryAddress, string note, int discount_id)
+        public Narudzba(string cardNumber, string email, int phone, string deliveryAddress, string note, PopustKodovi discount)
         {
             Datum = DateTime.Now;
-            Broj_Kartice = cardNumber;
+            BrojKartice = cardNumber;
             Email = email;
-            Broj_Mobitela = phone;
-            Adresa_Dostave = deliveryAddress;
+            BrojMobitela = phone;
+            AdresaDostave = deliveryAddress;
             Napomena = note;
-            Kod_Za_Popust_Id = discount_id;
+            KodZaPopust = discount;
         }
-        public int Id { get; private set; }
-        public DateTime Datum { get; private set; }
-        public decimal Ukupna_Cijena_Bez_P { get; private set; }
-        public decimal Ukupna_Cijena_S_P { get; private set; }
-        public int Kod_Za_Popust_Id { get; private set; }
-        public int Nacin_Placanja_Id { get; private set; }
-        public string Broj_Kartice { get; private set; }
-        public string Email { get; private set; }
-        public int Broj_Mobitela { get; private set; }
-        public string Adresa_Dostave { get; private set; }
-        public string Napomena { get; private set; }
+        public Narudzba()
+        {
+            NarudzbaProizvodis = new HashSet<NarudzbaProizvodi>();
+        }
 
+        public int Id { get; set; }
+        public DateTime? Datum { get; set; }
+        public decimal? UkupnaCijenaBezP { get; set; }
+        public decimal? UkupnaCijenaSP { get; set; }
+        public int? KodZaPopustId { get; set; }
+        public int? NacinPlacanjaId { get; set; }
+        public string BrojKartice { get; set; }
+        public string Email { get; set; }
+        public int? BrojMobitela { get; set; }
+        public string AdresaDostave { get; set; }
+        public string Napomena { get; set; }
+
+        public virtual PopustKodovi KodZaPopust { get; set; }
+        public virtual NacinPlacanja NacinPlacanja { get; set; }
+        public virtual ICollection<NarudzbaProizvodi> NarudzbaProizvodis { get; set; }
+        public virtual ICollection<Proizvod> Proizvods { get; set; }
+
+        [NotMapped]
         public IReadOnlyCollection<Proizvod> Items => _items;
 
         public void AddItem(Proizvod item)
         {
-            if(item.Kolicina == 0)
+            if (item.Kolicina == 0)
             {
                 throw new NotAvailableException();
             }

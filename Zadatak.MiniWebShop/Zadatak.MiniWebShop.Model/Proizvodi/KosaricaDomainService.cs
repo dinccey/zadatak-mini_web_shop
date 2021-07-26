@@ -27,10 +27,5 @@ namespace Zadatak.MiniWebShop.Model.Proizvodi
             return kosarica;
         }
 
-        
-        public async Task<Kosarica> CreateKosaricaAsync()
-        {
-            return new Kosarica();
-        }
     }
 }

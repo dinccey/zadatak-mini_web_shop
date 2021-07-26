@@ -15,26 +15,25 @@ namespace Zadatak.MiniWebShop.Service.Proizvodi
         private readonly IUnitOfWork _unitOfWork;
         private readonly IProizvodRepository _proizvodRepository;
         private readonly KosaricaDomainService _kosaricaDomainService;
-        private Kosarica kosarica;
         
-        public KosaricaService()
+        
+        public KosaricaService(KosaricaDomainService kosaricaDomainService)
         {
-
+            _kosaricaDomainService = kosaricaDomainService;
         }
-        public async Task AddItemAsync(AddItemDto dto, Kosarica kosaricaDto)
+        public async Task<Kosarica> AddItemAsync(AddItemDto dto, Kosarica kosaricaDto)
         {
-            kosarica = await _kosaricaDomainService.AddItemAsync(dto, kosaricaDto);
+            return await _kosaricaDomainService.AddItemAsync(dto, kosaricaDto);
             
+
         }
 
-        public async Task CreateKosarica()
-        {
-            kosarica = await _kosaricaDomainService.CreateKosaricaAsync();
-        }
+       
 
-        public async Task RemoveItemAsync(AddItemDto dto, Kosarica kosaricaDto)
+        public async Task<Kosarica> RemoveItemAsync(AddItemDto dto, Kosarica kosaricaDto)
         {
-            kosarica = await _kosaricaDomainService.RemoveItemAsync(dto, kosaricaDto);
+            return await _kosaricaDomainService.RemoveItemAsync(dto, kosaricaDto);
+            
         }
     }
 }

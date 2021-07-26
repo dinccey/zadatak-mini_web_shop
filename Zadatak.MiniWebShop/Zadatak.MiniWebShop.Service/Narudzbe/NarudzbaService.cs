@@ -31,7 +31,7 @@ namespace Zadatak.MiniWebShop.Service.Narudzbe
         public async Task CreateNarudzbaAsync(CreateNarudzbaDto dto)
         {
             var discount = await _narudzbaDomainService.GetDiscountIdAsync(dto.DiscountCodeId);
-            var narudzba = await _narudzbaDomainService.CreateNarudzbaAsync(dto.CardNumber, dto.Email, dto.Phone, dto.DeliveryAddress, dto.Note, discount.Id);
+            var narudzba = await _narudzbaDomainService.CreateNarudzbaAsync(dto.CardNumber, dto.Email, dto.Phone, dto.DeliveryAddress, dto.Note, discount);
             await _narudzbaRepository.CreateNarudzbaAsync(narudzba, _kosarica);
             await _unitOfWork.CommitAsync();
         }

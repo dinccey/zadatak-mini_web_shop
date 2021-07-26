@@ -11,27 +11,27 @@ namespace Zadatak.MiniWebShop.Repository.Proizvodi
 {
     public class ProizvodRepository : IProizvodRepository
     {
-        private readonly ShopDbContext _context;
-        public ProizvodRepository(ShopDbContext context)
+        private readonly MiniWebShopContext _context;
+        public ProizvodRepository(MiniWebShopContext context)
         {
             _context = context;
         }
         public async Task<IEnumerable<Brand>> GetAllBrandsAsync()
         {
-            var brandovi = _context.Brandovi;
+            var brandovi = _context.Brands;
             return brandovi.ToList();
         }
 
         public async Task<IEnumerable<Proizvod>> GetAllProizvodAsync()
         {
-            var proizvodi = _context.Proizvodi;
+            var proizvodi = _context.Proizvods;
             return proizvodi.ToList();
         }
 
         public async Task<Proizvod> GetProizvodByIdAsync(int id)
         {
-            var proizvod = await _context.Proizvodi
-                .FirstOrDefaultAsync(p => p.Brand_Id == id);
+            var proizvod = await _context.Proizvods
+                .FirstOrDefaultAsync(p => p.Brand.Id == id);
             return proizvod;
         }
     }

@@ -28,7 +28,7 @@ namespace Zadatak.MiniWebShop.Repository.Narudzbe
             throw new NotImplementedException();
         }
 
-        public Task<KodPopust> GetPopustIdAsync(int discountCodeId)
+        public Task<PopustKodovi> GetPopustIdAsync(int discountCodeId)
         {
             throw new NotImplementedException();
         }

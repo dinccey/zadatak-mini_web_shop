@@ -2,15 +2,17 @@
 
 namespace Zadatak.MiniWebShop.Model.Narudzbe
 {
-    public class NacinPlacanja
+    public class PopustKodovi
     {
-        public NacinPlacanja()
+        public PopustKodovi()
         {
             Narudzbas = new HashSet<Narudzba>();
         }
 
         public int Id { get; set; }
-        public string Naziv { get; set; }
+        public string Kod { get; set; }
+        public decimal? Popust { get; set; }
+        public byte? Iskoristen { get; set; }
 
         public virtual ICollection<Narudzba> Narudzbas { get; set; }
     }

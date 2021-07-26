@@ -17,6 +17,9 @@ using Zadatak.MiniWebShop.Infrastructure.Domain;
 using Zadatak.MiniWebShop.Repository.Proizvodi;
 using Zadatak.MiniWebShop.Model.Proizvodi;
 using Zadatak.MiniWebShop.Service.Proizvodi;
+using Zadatak.MiniWebShop.Service.Narudzbe;
+using Zadatak.MiniWebShop.Repository.Narudzbe;
+using Zadatak.MiniWebShop.Model.Narudzbe;
 
 namespace Zadatak.MiniWebShop.API
 {
@@ -35,11 +38,17 @@ namespace Zadatak.MiniWebShop.API
             
             services.AddControllers();
 
-            services.AddDbContext<ShopDbContext>((options) => options.UseSqlServer(Configuration.GetConnectionString("MiniWebShop")));
+            services.AddDbContext<MiniWebShopContext>((options) => options.UseSqlServer(Configuration.GetConnectionString("MiniWebShop")));
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddTransient<IProizvodRepository, ProizvodRepository>();
             services.AddTransient<IProizvodService, ProizvodService>();
+            services.AddTransient<IKosaricaService, KosaricaService>();
+            services.AddTransient<INarudzbaService, NarudzbaService>();
+            services.AddTransient<INarudzbaRepository, NarudzbaRepository>();
+            services.AddTransient<KosaricaDomainService, KosaricaDomainService>();
             services.AddTransient<ProizvodDomainService, ProizvodDomainService>();
+            services.AddTransient<NarudzbaDomainService, NarudzbaDomainService>();
+            services.AddSingleton<Kosarica, Kosarica>();
 
             services.AddSwaggerGen(c =>
             {

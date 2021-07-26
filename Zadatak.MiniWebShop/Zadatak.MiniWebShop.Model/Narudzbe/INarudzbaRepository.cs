@@ -11,7 +11,7 @@ namespace Zadatak.MiniWebShop.Model.Narudzbe
     {
         Task<Narudzba> CreateNarudzbaAsync(Narudzba narudzba, Kosarica kosarica);
         Task<int> AddItemAsync(Proizvod proizvod);
-        Task<KodPopust> GetPopustIdAsync(int discountCodeId);
+        Task<PopustKodovi> GetPopustIdAsync(int discountCodeId);
         Task<IEnumerable<NacinPlacanja>> GetAllNacinPlacanjaAsync();
     }
 }

@@ -1,4 +1,6 @@
 C:\Users\thePassword\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.Repository\bin\Debug\net5.0\Zadatak.MiniWebShop.Repository.deps.json
+C:\Users\thePassword\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.Repository\bin\Debug\net5.0\Zadatak.MiniWebShop.Repository.runtimeconfig.json
+C:\Users\thePassword\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.Repository\bin\Debug\net5.0\Zadatak.MiniWebShop.Repository.runtimeconfig.dev.json
 C:\Users\thePassword\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.Repository\bin\Debug\net5.0\Zadatak.MiniWebShop.Repository.dll
 C:\Users\thePassword\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.Repository\bin\Debug\net5.0\ref\Zadatak.MiniWebShop.Repository.dll
 C:\Users\thePassword\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.Repository\bin\Debug\net5.0\Zadatak.MiniWebShop.Repository.pdb
@@ -15,3 +17,4 @@ C:\Users\thePassword\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zada
 C:\Users\thePassword\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.Repository\obj\Debug\net5.0\Zadatak.MiniWebShop.Repository.dll
 C:\Users\thePassword\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.Repository\obj\Debug\net5.0\ref\Zadatak.MiniWebShop.Repository.dll
 C:\Users\thePassword\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.Repository\obj\Debug\net5.0\Zadatak.MiniWebShop.Repository.pdb
+C:\Users\thePassword\Source\Repos\zadatak-mini_web_shop\Zadatak.MiniWebShop\Zadatak.MiniWebShop.Repository\obj\Debug\net5.0\Zadatak.MiniWebShop.Repository.genruntimeconfig.cache
