@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,27 +11,57 @@ namespace Zadatak.MiniWebShop.Repository.Narudzbe
 {
     public class NarudzbaRepository : INarudzbaRepository
     {
-        private Kosarica _kosarica;
-        public Task<int> AddItemAsync(Proizvod proizvod)
+        private readonly MiniWebShopContext _context;
+        public NarudzbaRepository(MiniWebShopContext context, Kosarica kosarica)
         {
-            throw new NotImplementedException();
+            _context = context;
+            _kosarica = kosarica;
         }
 
-        public async Task<Narudzba> CreateNarudzbaAsync(Narudzba narudzba, Kosarica kosarica)
-        {
-            _kosarica = kosarica;
+        private Kosarica _kosarica;
+        
 
+        public async Task<Narudzba> CreateNarudzbaAsync(Narudzba narudzba)
+        {
+
+            _context.Narudzbas.Add(narudzba);
+            if(narudzba.Popust != null)
+            {
+                narudzba.Popust.Iskoristen = 1;
+                _context.PopustKodovis
+                    .Update(narudzba.Popust);
+            }
+
+            await _context.SaveChangesAsync();
+
+            
+            NarudzbaProizvodi narudzbaProizvodi = new NarudzbaProizvodi();
+            narudzbaProizvodi.Narudzbaid = narudzba.Id;
+            foreach (var item in narudzba.Items)
+            {
+                narudzbaProizvodi.Proizvodid = item.Id;
+                _context.NarudzbaProizvodis.Add(narudzbaProizvodi);
+                _context.SaveChanges();
+            }
+
+            
             return narudzba;
         }
 
-        public Task<IEnumerable<NacinPlacanja>> GetAllNacinPlacanjaAsync()
+        public async Task<IEnumerable<NacinPlacanja>> GetAllNacinPlacanjaAsync()
         {
-            throw new NotImplementedException();
+            IEnumerable<NacinPlacanja> nacinPlacanjas = _context.NacinPlacanjas;
+            return  nacinPlacanjas.ToList();
         }
 
-        public Task<PopustKodovi> GetPopustIdAsync(int discountCodeId)
+        public async Task<PopustKodovi> GetPopustIdAsync(string discountCode)
         {
-            throw new NotImplementedException();
+
+            var popust = from p in _context.PopustKodovis where
+                         p.Iskoristen != 0 && p.Kod == discountCode
+                         select p;
+
+            return popust.FirstOrDefault();
         }
     }
 }

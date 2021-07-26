@@ -9,9 +9,9 @@ namespace Zadatak.MiniWebShop.Model.Narudzbe
 {
     public interface INarudzbaRepository
     {
-        Task<Narudzba> CreateNarudzbaAsync(Narudzba narudzba, Kosarica kosarica);
-        Task<int> AddItemAsync(Proizvod proizvod);
-        Task<PopustKodovi> GetPopustIdAsync(int discountCodeId);
+        Task<Narudzba> CreateNarudzbaAsync(Narudzba narudzba);
+        
+        Task<PopustKodovi> GetPopustIdAsync(string discountCode);
         Task<IEnumerable<NacinPlacanja>> GetAllNacinPlacanjaAsync();
     }
 }

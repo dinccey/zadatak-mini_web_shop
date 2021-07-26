@@ -24,6 +24,16 @@ namespace Zadatak.MiniWebShop.Model.Narudzbe
             Napomena = note;
             KodZaPopust = discount;
         }
+        public Narudzba(string email, int phone, string deliveryAddress, string note, PopustKodovi discount)
+        {
+            Datum = DateTime.Now;
+            
+            Email = email;
+            BrojMobitela = phone;
+            AdresaDostave = deliveryAddress;
+            Napomena = note;
+            KodZaPopust = discount;
+        }
         public Narudzba()
         {
             NarudzbaProizvodis = new HashSet<NarudzbaProizvodi>();
@@ -48,6 +58,8 @@ namespace Zadatak.MiniWebShop.Model.Narudzbe
 
         [NotMapped]
         public IReadOnlyCollection<Proizvod> Items => _items;
+        [NotMapped]
+        public PopustKodovi Popust { get; set; }
 
         public void AddItem(Proizvod item)
         {

@@ -31,7 +31,7 @@ namespace Zadatak.MiniWebShop.Repository.Proizvodi
         public async Task<Proizvod> GetProizvodByIdAsync(int id)
         {
             var proizvod = await _context.Proizvods
-                .FirstOrDefaultAsync(p => p.Brand.Id == id);
+                .FirstOrDefaultAsync(p => p.Id == id);
             return proizvod;
         }
     }

@@ -15,41 +15,73 @@ namespace Zadatak.MiniWebShop.Service.Narudzbe
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly INarudzbaRepository _narudzbaRepository;
-        private readonly IProizvodRepository _proizvodRepository;
+        private readonly Kosarica _kosarica;
         private readonly NarudzbaDomainService _narudzbaDomainService;
 
-        private Kosarica _kosarica;
 
 
-        public NarudzbaService(IUnitOfWork unitOfWork, INarudzbaRepository narudzbaRepository, NarudzbaDomainService narudzbaDomainService, IProizvodRepository proizvodRepository)
+        public NarudzbaService(IUnitOfWork unitOfWork, INarudzbaRepository narudzbaRepository, NarudzbaDomainService narudzbaDomainService, Kosarica kosarica)
         {
             _unitOfWork = unitOfWork;
             _narudzbaRepository = narudzbaRepository;
-            _proizvodRepository = proizvodRepository;
+            _kosarica = kosarica;
             _narudzbaDomainService = narudzbaDomainService;
         }
         public async Task CreateNarudzbaAsync(CreateNarudzbaDto dto)
         {
-            var discount = await _narudzbaDomainService.GetDiscountIdAsync(dto.DiscountCodeId);
-            var narudzba = await _narudzbaDomainService.CreateNarudzbaAsync(dto.CardNumber, dto.Email, dto.Phone, dto.DeliveryAddress, dto.Note, discount);
-            await _narudzbaRepository.CreateNarudzbaAsync(narudzba, _kosarica);
+            var narudzba = NarudzbaLogic(dto);
+
+            await _narudzbaRepository.CreateNarudzbaAsync(narudzba.Result);
             await _unitOfWork.CommitAsync();
         }
-        public async Task AddItemAsync(AddItemDto dto)
+
+        public async Task<Narudzba> PreviewNarudzbaAsync(CreateNarudzbaDto dto)
         {
-            var proizvod = await _narudzbaDomainService.AddItemAsync(dto.Id);
-            await _narudzbaRepository.AddItemAsync(proizvod);
+            var narudzba = NarudzbaLogic(dto);
             await _unitOfWork.CommitAsync();
+            return narudzba.Result;
         }
+
         public async Task<IEnumerable<NacinPlacanja>> GetAllNacinPlacanjaAsync()
         {
             IEnumerable<NacinPlacanja> nacinPlacanjas = await _narudzbaDomainService.GetNacinPlacanjasAsync();
             return nacinPlacanjas;
         }
 
-        public async Task SetKosarica(Kosarica kosarica)
+        private async Task<Narudzba> NarudzbaLogic(CreateNarudzbaDto dto)
         {
-            _kosarica = kosarica;
+            Narudzba narudzba;
+            var discount = await _narudzbaDomainService.GetDiscountIdAsync(dto.DiscountCode);
+            if (dto.PaymentMethodId == 1)
+            {
+                narudzba = await _narudzbaDomainService.CreateNarudzbaAsync(dto.CardNumber, dto.Email, dto.Phone, dto.DeliveryAddress, dto.Note, discount);
+            }
+            else
+            {
+                narudzba = await _narudzbaDomainService.CreateNarudzbaAsync(dto.Email, dto.Phone, dto.DeliveryAddress, dto.Note, discount);
+            }
+
+            narudzba.UkupnaCijenaBezP = 0;
+            foreach (var item in _kosarica.Items)
+            {
+                narudzba.AddItem(item);
+                narudzba.UkupnaCijenaBezP *= item.Cijena;
+            }
+
+            if (dto.DiscountCode != null)
+            {
+                var popust = _narudzbaDomainService.GetDiscountIdAsync(dto.DiscountCode);
+                if (popust.Result != null)
+                {
+                    narudzba.UkupnaCijenaBezP = Decimal.Multiply((decimal)narudzba.UkupnaCijenaBezP, 1 - (decimal)popust.Result.Popust);
+                    narudzba.Popust = await popust;
+                }
+            }
+            narudzba.UkupnaCijenaSP = Decimal.Multiply((decimal)narudzba.UkupnaCijenaBezP, (decimal)1.25);
+
+            return narudzba;
         }
+
+        
     }
 }

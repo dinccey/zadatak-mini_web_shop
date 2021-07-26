@@ -29,15 +29,21 @@ namespace Zadatak.MiniWebShop.Model.Narudzbe
             return item.Result;
         }
 
-        public async Task<PopustKodovi> GetDiscountIdAsync(int discountCodeId)
+        public async Task<PopustKodovi> GetDiscountIdAsync(string discountCode)
         {
-            var kodPopust = _narudzbaRepository.GetPopustIdAsync(discountCodeId);
+            var kodPopust = _narudzbaRepository.GetPopustIdAsync(discountCode);
             return kodPopust.Result;
         }
         public async Task<IEnumerable<NacinPlacanja>> GetNacinPlacanjasAsync()
         {
             IEnumerable<NacinPlacanja> nacinPlacanjas = await _narudzbaRepository.GetAllNacinPlacanjaAsync();
             return nacinPlacanjas;
+        }
+
+        public async Task<Narudzba> CreateNarudzbaAsync(string email, int phone, string deliveryAddress, string note, PopustKodovi discount)
+        {
+            var narudzba = new Narudzba(email, phone, deliveryAddress, note, discount);
+            return narudzba;
         }
     }
 }
