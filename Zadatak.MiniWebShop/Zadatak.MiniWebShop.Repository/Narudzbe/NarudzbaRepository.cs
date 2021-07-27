@@ -39,8 +39,10 @@ namespace Zadatak.MiniWebShop.Repository.Narudzbe
             narudzbaProizvodi.Narudzbaid = narudzba.Id;
             foreach (var item in narudzba.Items)
             {
+                item.Kolicina = item.Kolicina - 1;
                 narudzbaProizvodi.Proizvodid = item.Id;
                 _context.NarudzbaProizvodis.Add(narudzbaProizvodi);
+                _context.Proizvods.Update(item);
                 _context.SaveChanges();
             }
 

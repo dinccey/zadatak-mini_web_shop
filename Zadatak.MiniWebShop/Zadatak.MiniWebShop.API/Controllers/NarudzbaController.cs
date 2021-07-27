@@ -60,6 +60,7 @@ namespace Zadatak.MiniWebShop.API.Controllers
         public async Task<OkResult> NarudzbaCreate([FromBody] CreateNarudzbaDto dto)
         {
             await _narudzbaService.CreateNarudzbaAsync(dto);
+            
             return Ok();
         }
         [HttpGet,Route("nacin_placanja")]
