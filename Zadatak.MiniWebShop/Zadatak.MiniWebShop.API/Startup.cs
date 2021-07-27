@@ -35,8 +35,15 @@ namespace Zadatak.MiniWebShop.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAllOrigins",
+                    builder => builder.AllowAnyOrigin());
+            });
+
             services.AddControllers();
+
+            
 
             services.AddDbContext<MiniWebShopContext>((options) => options.UseSqlServer(Configuration.GetConnectionString("MiniWebShop")));
             services.AddScoped<IUnitOfWork, UnitOfWork>();
@@ -59,18 +66,25 @@ namespace Zadatak.MiniWebShop.API
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseCors(x => x
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .SetIsOriginAllowed(origin => true) // allow any origin
+                .AllowCredentials()); // allow credentials
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
+                
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Zadatak.MiniWebShop.API v1"));
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             app.UseRouting();
-
+            
             app.UseAuthorization();
+            
 
             app.UseEndpoints(endpoints =>
             {

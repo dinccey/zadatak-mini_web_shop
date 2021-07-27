@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Zadatak.MiniWebShop",
+    "\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Repository",
+    "\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Repository\\Proizvodi"
   ],
-  "SelectedNode": "\\Zadatak.MiniWebShop.sln",
+  "SelectedNode": "\\Zadatak.MiniWebShop\\Zadatak.MiniWebShop.Repository\\Proizvodi\\ProizvodRepository.cs",
   "PreviewInSolutionExplorer": false
 }

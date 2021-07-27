@@ -13,7 +13,8 @@ namespace Zadatak.MiniWebShop.Model.Narudzbe
         public int Id { get; set; }
         public int? Narudzbaid { get; set; }
         public int? Proizvodid { get; set; }
-        //[ForeignKey("NarudzbaId")]
+        //
+        //,[ForeignKey("NarudzbaId")]
         public virtual Narudzba Narudzba { get; set; }
         public virtual Proizvod Proizvod { get; set; }
     }

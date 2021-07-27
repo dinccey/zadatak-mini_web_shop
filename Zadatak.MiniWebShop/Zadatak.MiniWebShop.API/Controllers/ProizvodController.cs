@@ -4,11 +4,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Web.Http.Cors;
 using Zadatak.MiniWebShop.Model.Proizvodi;
 using Zadatak.MiniWebShop.Service.Proizvodi;
 
 namespace Zadatak.MiniWebShop.API.Controllers
 {
+    
     [Route("api/proizvod")]
     [ApiController]
     public class ProizvodController : ControllerBase
@@ -19,7 +21,7 @@ namespace Zadatak.MiniWebShop.API.Controllers
         {
             _proizvodService = proizvodService;
         }
-
+        
         [HttpGet]
         public async Task<IEnumerable<Proizvod>> Get()
         {

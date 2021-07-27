@@ -37,17 +37,22 @@ namespace Zadatak.MiniWebShop.API.Controllers
         }
 
         [HttpPost, Route("kosarica/add")]
-        public async Task KosaricaAdd([FromBody] AddItemDto dto)
+        public async Task KosaricaAdd(int id)
         {
-            _kosarica = await _kosaricaService.AddItemAsync(dto, _kosarica);
+            AddItemDto dto = new AddItemDto();
+            dto.Id = id;
+            await _kosaricaService.AddItemAsync(dto);
             
             
 
         }
         [HttpPost, Route("kosarica/remove")]
-        public async Task KosaricaRemove([FromBody] AddItemDto dto)
+        public async Task KosaricaRemove(int id)
         {
-            _kosarica = await _kosaricaService.RemoveItemAsync(dto, _kosarica);
+            AddItemDto dto = new AddItemDto();
+            dto.Id = id;
+            _kosarica.RemoveItem(id);
+            await _kosaricaService.RemoveItemAsync(dto);
             
         }
 

@@ -6,25 +6,27 @@ namespace Zadatak.MiniWebShop.Model.Proizvodi
     {
 
         private readonly IProizvodRepository _proizvodRepository;
-        public KosaricaDomainService(IProizvodRepository proizvodRepository)
+        private Kosarica _kosarica;
+        public KosaricaDomainService(IProizvodRepository proizvodRepository,Kosarica kosarica)
         {
             _proizvodRepository = proizvodRepository;
+            _kosarica = kosarica;
         }
 
 
 
-        public async Task<Kosarica> AddItemAsync(AddItemDto dto, Kosarica kosarica)
+        public async Task AddItemAsync(AddItemDto dto)
         {
             var proizvod = await _proizvodRepository.GetProizvodByIdAsync(dto.Id);
-            kosarica.AddItem(proizvod);
-            return kosarica;
+            _kosarica.AddItem(proizvod);
+            
         }
-        public async Task<Kosarica> RemoveItemAsync(AddItemDto dto, Kosarica kosarica)
+        public async Task RemoveItemAsync(AddItemDto dto)
         {
             var proizvod = await _proizvodRepository.GetProizvodByIdAsync(dto.Id);
-            kosarica.RemoveItem(proizvod);
+            _kosarica.RemoveItem(proizvod);
 
-            return kosarica;
+           
         }
 
     }

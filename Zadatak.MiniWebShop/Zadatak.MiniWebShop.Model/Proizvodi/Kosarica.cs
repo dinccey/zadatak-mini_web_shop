@@ -13,7 +13,7 @@ namespace Zadatak.MiniWebShop.Model.Proizvodi
         {
 
         }
-        private readonly List<Proizvod> _items = new List<Proizvod>();
+        private List<Proizvod> _items = new List<Proizvod>();
         public IReadOnlyCollection<Proizvod> Items => _items;
         public void AddItem(Proizvod item)
         {
@@ -36,7 +36,11 @@ namespace Zadatak.MiniWebShop.Model.Proizvodi
         }
         public void RemoveItem(Proizvod item)
         {
-            if (_items.Contains(item)) _items.Remove(item);
+            _items.Remove(item);
+        }
+        public void RemoveItem(int id)
+        {
+            _items.Remove(_items.Find(o=> o.Id == id));
         }
     }
 }

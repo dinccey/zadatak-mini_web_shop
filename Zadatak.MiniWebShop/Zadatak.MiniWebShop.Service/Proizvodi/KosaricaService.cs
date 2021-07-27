@@ -21,18 +21,18 @@ namespace Zadatak.MiniWebShop.Service.Proizvodi
         {
             _kosaricaDomainService = kosaricaDomainService;
         }
-        public async Task<Kosarica> AddItemAsync(AddItemDto dto, Kosarica kosaricaDto)
+        public async Task AddItemAsync(AddItemDto dto)
         {
-            return await _kosaricaDomainService.AddItemAsync(dto, kosaricaDto);
+            await _kosaricaDomainService.AddItemAsync(dto);
             
 
         }
 
        
 
-        public async Task<Kosarica> RemoveItemAsync(AddItemDto dto, Kosarica kosaricaDto)
+        public async Task RemoveItemAsync(AddItemDto dto)
         {
-            return await _kosaricaDomainService.RemoveItemAsync(dto, kosaricaDto);
+            await _kosaricaDomainService.RemoveItemAsync(dto);
             
         }
     }
